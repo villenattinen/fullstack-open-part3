@@ -1,0 +1,45 @@
+GET http://localhost:3001/api/persons
+
+###
+GET http://localhost:3001/info
+
+###
+GET http://localhost:3001/api/persons/1
+
+###
+GET http://localhost:3001/api/persons/666
+
+###
+DELETE http://localhost:3001/api/persons/1
+
+###
+DELETE http://localhost:3001/api/persons/666
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Herto Allas",
+    "number": "040-654321"
+}
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Herto Allas"
+}
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "number": "040-654321"
+}
